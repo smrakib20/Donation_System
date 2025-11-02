@@ -1,3 +1,4 @@
+// Head section 
 let head = document.getElementById('headers');
 let first_element = document.createElement('div');
 first_element.innerHTML = `<div class="flex items-center navbar-center md:hidden space-x-3 pb-4">
@@ -37,7 +38,7 @@ document.getElementById('home-btn').addEventListener('click', function () {
     home_remove.classList.add('hidden');
     home_removes.classList.add('hidden');
 });
-// History
+// History Active btn
 let history_bg = document.getElementById('history');
 history_bg.addEventListener('click', function () {
     let parts_hidden = document.getElementById('parts')
@@ -75,7 +76,8 @@ document.getElementById('donate_btn').addEventListener('click', function (e) {
         return;
     }
     let taka = "1";
-    if (input_fields_pf < taka) {
+    if (input_fields_pf < taka) {    // history_add.classList.add('hidden')
+
         alert("You do not have Donate Money under 1 tk")
         return;
     }
@@ -88,22 +90,19 @@ document.getElementById('donate_btn').addEventListener('click', function (e) {
 
     // history 
     const h2Container = document.getElementById('last-history');
-    h2Container.classList.add('hidden');
+    // h2Container.classList.add('hidden');
 
     const h2div = document.createElement('div');
     h2div.className = 'flex flex-col gap-4 bg-white shadow-md rounded-xl border border-gray-300 p-4 my-4 w-11/12 md:w-3/4 mx-auto text-center';;
     const h2Element = document.createElement('h2');
     h2Element.className = 'text-lg md:text-xl font-semibold text-gray-800 mx-auto';
-    // const times = (date.getDay())
-    h2Element.innerText = `${input_fields_pf} Taka is Donated for famine -2024 at Feni, Bangladesh`; // at ${times}
+    h2Element.innerText = `${input_fields_pf} Taka is Donated for famine -2024 at Feni, Bangladesh`;
     const dateEl = document.createElement('p');
     dateEl.className = 'text-sm text-gray-500 mt-2';
     dateEl.innerText = `Date: ${new Date().toString()}`;
     h2div.appendChild(h2Element);
     h2div.appendChild(dateEl);
     h2Container.appendChild(h2div);
-    // let brk = document.createElement('br');
-    // h2Container.parentNode.insertBefore(brk, h2Container.nextSibling);
 
     // modal 
     modal.classList.remove('hidden');
@@ -141,6 +140,22 @@ document.getElementById('donate_btns').addEventListener('click', function (e) {
 
     let add_tk = document.getElementById('input_fields')
     add_tk.value = '';
+    // history 
+    const h2Container = document.getElementById('last-history');
+    // h2Container.classList.add('hidden');
+
+    const h2div = document.createElement('div');
+    h2div.className = 'flex flex-col gap-4 bg-white shadow-md rounded-xl border border-gray-300 p-4 my-4 w-11/12 md:w-3/4 mx-auto text-center';;
+    const h2Element = document.createElement('h2');
+    h2Element.className = 'text-lg md:text-xl font-semibold text-gray-800 mx-auto';
+    h2Element.innerText = `${input_fields_pf} Taka is Donated for Flood Relief in Feni,Bangladesh`;
+    const dateEl = document.createElement('p');
+    dateEl.className = 'text-sm text-gray-500 mt-2';
+    dateEl.innerText = `Date: ${new Date().toString()}`;
+    h2div.appendChild(h2Element);
+    h2div.appendChild(dateEl);
+    h2Container.appendChild(h2div);
+
     modal.classList.remove('hidden');
     let closeModal = document.getElementById('close_modal');
     closeModal.addEventListener('click', function () {
@@ -175,7 +190,22 @@ document.getElementById('donate_btnss').addEventListener('click', function (e) {
 
     let add_tk = document.getElementById('input_fieldss')
     add_tk.value = '';
+    // history 
+    const h2Container = document.getElementById('last-history');
+    // h2Container.classList.add('hidden');
 
+    const h2div = document.createElement('div');
+    h2div.className = 'flex flex-col gap-4 bg-white shadow-md rounded-xl border border-gray-300 p-4 my-4 w-11/12 md:w-3/4 mx-auto text-center';;
+    const h2Element = document.createElement('h2');
+    h2Element.className = 'text-lg md:text-xl font-semibold text-gray-800 mx-auto';
+    h2Element.innerText = `${input_fields_pf} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh`;
+    const dateEl = document.createElement('p');
+    dateEl.className = 'text-sm text-gray-500 mt-2';
+    dateEl.innerText = `Date: ${new Date().toString()}`;
+    h2div.appendChild(h2Element);
+    h2div.appendChild(dateEl);
+    h2Container.appendChild(h2div);
+    // modal 
     modal.classList.remove('hidden');
     let closeModal = document.getElementById('close_modal');
     closeModal.addEventListener('click', function () {
