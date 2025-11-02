@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Website</title>
+    <script defer src="Donate-web.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <!-- navber  -->
+        <div id="headers" class="navbar pt-2 md:pt-8 md:pb-16 bg-gray-200 flex flex-col justify-around items-center ">
+            <div class="flex justify-between xl:gap-96 lg:gap-60 gap-16 items-center">
+                <div class="navbar-start">
+                    <!-- btn div  -->
+                    <div>
+                        <a id="blog-btn" href="#" class="btn bg-lime-400 text-xl">Blog</a>
+                        <div id="home-btn" class="hidden w-full">
+                            <a id="blog-btn" href="#" class="btn bg-lime-400 text-xl">Home</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="Donate-bangladesh" class=" hidden navbar-center space-x-3">
+                    <img src="assets/logo.png" alt="">
+                    <h2 class=" font-bold text-xl ">Donate Bangladesh </h2>
+                </div>
+                <div class="navbar-end flex items-center w-full">
+                    <img class="max-w-6 max-h-8" src="assets/coin.png" alt="">
+                    <p id="main_tk" class="text-xl ">5500 BDT</p>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+<main>
+    <!-- home-section -->
+    <div id="home-btns" class=" hidden bg-base-200 p-24 ">
+        <h1 class=" font-bold text-3xl pb-8">Important FAQ<iconify-icon icon="mdi:help-circle-outline" class="text-3xl">
+            </iconify-icon> </h1>
+        <div class="collapse collapse-arrow bg-base-200 border p-4">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-2xl p-4 font-medium">What is the Document Object Model (DOM)?
+            </div>
+            <div class="collapse-content text-xl ">
+                <p>The Document Object Model (DOM) is a programming interface that represents an
+                    HTML or XML document as a tree of objects, allowing programs to dynamically
+                    change its structure, style, and content. </p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200 p-4">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-2xl p-4 font-medium">How do you select an element from the
+                DOM?
+            </div>
+            <div class="collapse-content text-xl">
+                <p>In JavaScript, you can select elements from the Document Object Model (DOM) using
+                    several built-in methods on the document object. The most common methods are
+                    querySelector() for selecting a single element and querySelectorAll() for
+                    selecting multiple elements.
+                </p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200 p-4">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-2xl p-4 font-medium">What is event delegation in the context
+                of the DOM, and why is it useful?
+            </div>
+            <div class="collapse-content text-xl">
+                <p>Event delegation is a technique where a single event listener is attached to a
+                    parent element to handle events for multiple child elements, instead of adding
+                    individual listeners to each child.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200 p-4">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-2xl p-4 font-medium">How do you manipulate an element's
+                attributes and styles using the DOM?
+            </div>
+            <div class="collapse-content text-xl">
+                <p>Manipulating an element's attributes and styles using the Document Object Model
+                    (DOM) in JavaScript involves selecting the element and then using specific
+                    properties and methods to modify its characteristics.</p>
+            </div>
+        </div>
+    </div>
+    <!-- main-part  -->
+    <div id="main_part" class="main_part ">
+        <!-- banner  -->
+        <div class="w-full flex justify-center items-center gap-4 py-8">
+            <!-- btn div  -->
+            <div>
+                <a href="#">
+                    <button id="donate" class="btn bg-lime-400">Donation</button>
+                </a>
+            </div>
+            <div id="">
+                <a href="#">
+                    <button id="history" class="btn">History</button>
+                </a>
+            </div>
+        </div>
+        <!-- history -->
+        <div id="last-history" class="flex flex-col gap-1 indicator mx-auto w-full">
+
+        </div>
+        <!-- div of parts  -->
+        <div id="parts" class="">
+            <!-- part-1-->
+            <div
+                class=" hero bg-base-100 border border-gray-300 w-[95%] md:w-[75%] lg:w-[90%] xl:w-[83%] mx-auto m-4 md:p-2 rounded-xl">
+                <div class=" hero-content flex-col lg:flex-row gap-8">
+                    <img src="/assets/noakhali.png"
+                        class="xl:max-w-full lg:max-w-[50%] max-w-2/3 rounded-lg shadow-2xl" />
+                    <div class="">
+                        <!-- taka  -->
+                        <div class="flex rounded max-w-full">
+                            <img src="assets/coin.png" alt="">
+                            <p id="add_tk" class="text-xl">0 BDT</p>
+                        </div>
+                        <h1 class="text-xl font-bold xl:pt-4">Donate for Flood at Noakhali, Bangladesh</h1>
+                        <p class="xl:py-4">You can donate to flood relief in Noakhali, Bangladesh, through various
+                            international organizations like GoFundMe, Islamic Relief Ireland, and ActionAid Ireland.
+                            Other
+                            options include contributing to specific funds on platforms These
+                            organizations provide specific funds on platforms These essential aid such as food, water
+                            and
+                            shelter to those affected by the floods. Islamic Relief Bangladesh, JAAGO Foundation, COAST
+                            Foundation, or the Bangladesh Red Crescent Society. </p>
+                        <input id="input_field" type="number" placeholder="Write Donation Amount"
+                            class="input input-bordered w-full my-2" />
+                        <br>
+                        <button id="donate_btn" class="btn bg-lime-400  w-full ">Donate Now</button>
+                    </div>
+                </div>
+                <!-- success_modal -->
+                <div id="success_modal" class="hidden fixed items-center justify-center  bg-opacity-50 z-50">
+                    <div class="bg-white rounded-2xl p-8 text-center shadow-xl w-80">
+                        <h2 class="text-2xl font-bold text-gray-800">🎉 Congrats!</h2>
+                        <img src="assets/coin.png" alt="coin" class="mx-auto my-4 w-10">
+                        <p class="text-gray-600">You have donated for humankind</p>
+                        <p class="font-semibold text-green-600 mt-2">Successfully</p>
+                        <button id="close_modal" class="btn bg-gray-200 mt-5">Close Confirmation</button>
+                    </div>
+                </div>
+            </div>
+            <!-- part-2-->
+            <div
+                class=" hero bg-base-100 border border-gray-300 w-[95%] md:w-[75%] lg:w-[90%] xl:w-[83%] mx-auto m-4 md:p-2 rounded-xl">
+                <div class=" hero-content flex-col lg:flex-row gap-8">
+                    <img src="/assets/feni.png" class="xl:max-w-full lg:max-w-[50%] max-w-2/3 rounded-lg shadow-2xl" />
+                    <div class="">
+                        <!-- taka -->
+                        <div class="flex">
+                            <img src="assets/coin.png" alt="">
+                            <p id="add_tks" class="text-xl">600 BDT</p>
+                        </div>
+                        <h1 class="text-xl font-bold">Donate for Flood Relief in Feni,Bangladesh</h1>
+                        <p class="py-4">You can donate for flood relief in Feni by supporting established organizations
+                            like
+                            Islamic Relief Bangladesh, JAAGO Foundation, COAST Foundation, or the Bangladesh Red
+                            Crescent
+                            Society.You can donate to flood relief in feni, Bangladesh for food, clean water, medical
+                            supplies, and shelter & Other options include contributing to specific funds on platforms
+                        </p>
+                        <input id="input_fields" type="number" placeholder="Write Donation Amount"
+                            class="input input-bordered  w-full  my-2" />
+                        <br>
+                        <button id="donate_btns" class="btn bg-lime-400 w-full ">Donate Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- part-3-->
+            <div
+                class=" hero bg-base-100 border border-gray-300 w-[95%] md:w-[75%] lg:w-[90%] xl:w-[83%] mx-auto m-4 md:p-2 rounded-xl">
+                <div class=" hero-content flex-col lg:flex-row gap-8">
+                    <img src="/assets/quota-protest.png"
+                        class="xl:max-w-full lg:max-w-[50%] max-w-2/3 rounded-lg shadow-2xl" />
+                    <div class="">
+                        <!-- taka  -->
+                        <div class="flex p-2">
+                            <img src="assets/coin.png" alt="">
+                            <p id="add_tkss" class="text-xl">2400 BDT</p>
+                        </div>
+                        <h1 class="text-xl font-bold">Aid for Injured in the Quota Movement</h1>
+                        <p class="py-2">On 15 July 2024, students of Dhaka University were sitting with placards and
+                            flags
+                            in a peaceful protest calling for reforms on the quota allocation for government jobs in
+                            Bangladesh. Suddenly, they were attacked by individuals armed with rods, sticks and clubs
+                            with a
+                            few even brandishing revolvers. Within hours, a pattern emerged across the country with
+                            similar
+                            attacks a group affiliated with the ruling Awami League (AL), against student protesters.
+                        </p>
+                        <input id="input_fieldss" type="number" placeholder="Write Donation Amount"
+                            class="input input-bordered  w-full my-2" />
+                        <br>
+                        <button id="donate_btnss" class="btn bg-lime-400 w-full ">Donate Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="bg-gray-200 h-36">
+
+    </div>
+</footer>
+
+</html>
