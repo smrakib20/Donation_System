@@ -47,7 +47,6 @@ history_bg.addEventListener('click', function () {
     parts_hidden.classList.add('hidden');
     history_bg.classList.add('bg-lime-400');
     donate_bg.classList.remove('bg-lime-400');
-
 })
 let donate_bg = document.getElementById('donate');
 donate_bg.addEventListener('click', function () {
@@ -57,7 +56,6 @@ donate_bg.addEventListener('click', function () {
     history_hidden.classList.add('hidden');
     donate_bg.classList.add('bg-lime-400');
     history_bg.classList.remove('bg-lime-400');
-
 })
 // tk 1 section
 
