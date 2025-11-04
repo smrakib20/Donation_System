@@ -88,7 +88,7 @@ document.getElementById('donate_btn').addEventListener('click', function (e) {
 
     // history 
     const h2Container = document.getElementById('last-history');
-    // h2Container.classList.add('hidden');
+    h2Container.classList.add('hidden');
 
     const h2div = document.createElement('div');
     h2div.className = 'flex flex-col gap-4 bg-white shadow-md rounded-xl border border-gray-300 p-4 my-4 w-11/12 md:w-3/4 mx-auto text-center';;
@@ -140,7 +140,7 @@ document.getElementById('donate_btns').addEventListener('click', function (e) {
     add_tk.value = '';
     // history 
     const h2Container = document.getElementById('last-history');
-    // h2Container.classList.add('hidden');
+    h2Container.classList.add('hidden');
 
     const h2div = document.createElement('div');
     h2div.className = 'flex flex-col gap-4 bg-white shadow-md rounded-xl border border-gray-300 p-4 my-4 w-11/12 md:w-3/4 mx-auto text-center';;
@@ -190,7 +190,7 @@ document.getElementById('donate_btnss').addEventListener('click', function (e) {
     add_tk.value = '';
     // history 
     const h2Container = document.getElementById('last-history');
-    // h2Container.classList.add('hidden');
+    h2Container.classList.add('hidden');
 
     const h2div = document.createElement('div');
     h2div.className = 'flex flex-col gap-4 bg-white shadow-md rounded-xl border border-gray-300 p-4 my-4 w-11/12 md:w-3/4 mx-auto text-center';;
